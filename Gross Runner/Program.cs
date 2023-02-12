@@ -16,7 +16,7 @@ namespace Gross_Runner
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GamePlay());
+            Application.Run(new Form2());
         }
     }
 }

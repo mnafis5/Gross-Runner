@@ -41,6 +41,8 @@
             this.Pause = new System.Windows.Forms.Label();
             this.score = new System.Windows.Forms.Label();
             this.Wall7 = new System.Windows.Forms.PictureBox();
+            this.PauseLabel = new System.Windows.Forms.Label();
+            this.restart = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Character1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wall3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wall5)).BeginInit();
@@ -156,12 +158,39 @@
             this.Wall7.TabIndex = 9;
             this.Wall7.TabStop = false;
             // 
+            // PauseLabel
+            // 
+            this.PauseLabel.BackColor = System.Drawing.Color.Yellow;
+            this.PauseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PauseLabel.Location = new System.Drawing.Point(115, 151);
+            this.PauseLabel.Name = "PauseLabel";
+            this.PauseLabel.Size = new System.Drawing.Size(202, 85);
+            this.PauseLabel.TabIndex = 10;
+            this.PauseLabel.Text = "Pause";
+            this.PauseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PauseLabel.Visible = false;
+            // 
+            // restart
+            // 
+            this.restart.AutoSize = true;
+            this.restart.BackColor = System.Drawing.Color.Chocolate;
+            this.restart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restart.ForeColor = System.Drawing.SystemColors.Control;
+            this.restart.Location = new System.Drawing.Point(188, 210);
+            this.restart.Name = "restart";
+            this.restart.Size = new System.Drawing.Size(57, 16);
+            this.restart.TabIndex = 11;
+            this.restart.Text = "Restart";
+            this.restart.Visible = false;
+            // 
             // GamePlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(459, 596);
+            this.Controls.Add(this.restart);
+            this.Controls.Add(this.PauseLabel);
             this.Controls.Add(this.Pause);
             this.Controls.Add(this.score);
             this.Controls.Add(this.try_again);
@@ -202,6 +231,8 @@
         private System.Windows.Forms.Label Pause;
         private System.Windows.Forms.Label score;
         private System.Windows.Forms.PictureBox Wall7;
+        private System.Windows.Forms.Label PauseLabel;
+        private System.Windows.Forms.Label restart;
     }
 }
 

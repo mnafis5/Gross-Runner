@@ -32,13 +32,13 @@ namespace Gross_Runner
             if (e.KeyCode == Keys.Left)
             {
                 // step = -4;
-                Character1.Left -= 17;
+                Character1.Left -= 15;
             }
 
             if (e.KeyCode == Keys.Right)
             {
                 //step = 4;
-                Character1.Left -= -17;
+                Character1.Left -= -15;
             }
             
 
@@ -212,6 +212,8 @@ namespace Gross_Runner
             if (!pauses)
             {
                 pauses = true;
+                PauseLabel.Visible=true;
+                restart.Visible=true;
                 gameRunning.Stop();
                 Character1.Visible = false;
                 player.Stop();
@@ -220,11 +222,15 @@ namespace Gross_Runner
             else
             {
                 pauses = false;
+                PauseLabel.Visible = false;
+                restart.Visible = false;
                 gameRunning.Start();
                 Character1.Visible = true;
                 player.Play();
                 Pause.Text = "||";
             }
         }
+
+       
     }
 }
